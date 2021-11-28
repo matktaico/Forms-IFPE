@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style type="text/css">
+        label, form{
+            display: block;
+            padding: 3px;
+        }     
+
+    </style>
+</head>
+<body>
+
+    <form action="paginas/pagina-login.html" method="GET">
+        <fieldset>
+            <legend>Formulário de Inscrição</legend>
+            <label>
+                Nome: <input type="text" name="name"/> 
+            
+            </label>
+            
+            <label>
+                Sobrenome: <input type="text" name="lastname"/> 
+            
+            </label>
+          
+            <label>
+                Idade: <input type="number" name="years-old" min="18" max="120">
+            </label>
+            
+            <label>
+                E-mail: <input type="mail" name="mail">
+            </label>
+            
+            <label>
+                Sexo: Masculino<input type="radio" name="sexo" value="M"> Feminino<input type="radio" name="sexo" value="F">
+            </label>
+         
+            <label>
+                Foto: <input type="file" name="photo" accept="image/png, image/jpeg">
+            </label>
+            
+            <label>
+                País: 
+                <select name="country">
+                    <option>Brasil</option>
+                    <option>Argentina</option>
+                    <option>EUA</option>
+                    <option>Alemanha</option>
+                    <option>França</option>
+                </select>
+            </label>
+           
+            <label>
+                A linguagem que você prefere? 
+                <select name="programming-lang" multiple="multiple">
+                    <option>JAVA</option>
+                    <option>Python</option>
+                    <option>C++</option>
+                    <option>C#</option>
+                    <option>JavaScript</option>
+                </select>
+                (Para fazer várias escolhas, mantenha a tecla CTRL pressionada)
+            </label>
+            <label>
+                Áreas de Atuação:
+                <input type="checkbox" name="area" value="computacao"> Computação
+                <input type="checkbox" name="area" value="gestao">  Gestão
+                <input type="checkbox" name="area" value="pedagogia"> Pedagogia
+            </label>
+            <input type="submit" name="enviar"> <input type="reset" name="reset" value="limpar">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
